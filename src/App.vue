@@ -3,11 +3,14 @@
   <Reactivity />
   <hr>
   <Computed />
+  <hr>
+  <ClassAndStyleBinding />
 </template>
 
 <script setup>
 import Reactivity from './components/Reactivity.vue';
 import Computed from './components/Computed.vue';
+import ClassAndStyleBinding from './components/ClassAndStyleBinding.vue';
 </script>
 
 <style>
