@@ -5,12 +5,15 @@
   <Computed />
   <hr>
   <ClassAndStyleBinding />
+  <hr>
+  <ConditionalRendering/>
 </template>
 
 <script setup>
 import Reactivity from './components/Reactivity.vue';
 import Computed from './components/Computed.vue';
 import ClassAndStyleBinding from './components/ClassAndStyleBinding.vue';
+import ConditionalRendering from './components/ConditionalRendering.vue';
 </script>
 
 <style>
