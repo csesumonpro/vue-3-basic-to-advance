@@ -1,6 +1,6 @@
 <template>
   <h2>Hello from App</h2>
-  <Reactivity />
+  <!-- <Reactivity />
   <hr>
   <Computed />
   <hr>
@@ -9,6 +9,9 @@
   <ConditionalRendering/>
   <hr>
   <ListRendering/>
+  <hr> -->
+  <EventHandling/>
+  <InputBindings/>
 </template>
 
 <script setup>
@@ -17,6 +20,8 @@ import Computed from './components/Computed.vue';
 import ClassAndStyleBinding from './components/ClassAndStyleBinding.vue';
 import ConditionalRendering from './components/ConditionalRendering.vue';
 import ListRendering from './components/ListRendering.vue';
+import EventHandling from './components/EventHandling.vue';
+import InputBindings from './components/InputBindings.vue';
 </script>
 
 <style>
