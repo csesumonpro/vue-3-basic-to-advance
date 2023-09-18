@@ -11,7 +11,10 @@
   <ListRendering/>
   <hr> -->
   <EventHandling/>
+  <hr>
   <InputBindings/>
+  <hr>
+  <LifeCycle/>
 </template>
 
 <script setup>
@@ -22,6 +25,7 @@ import ConditionalRendering from './components/ConditionalRendering.vue';
 import ListRendering from './components/ListRendering.vue';
 import EventHandling from './components/EventHandling.vue';
 import InputBindings from './components/InputBindings.vue';
+import LifeCycle from './components/LifeCycle.vue';
 </script>
 
 <style>
