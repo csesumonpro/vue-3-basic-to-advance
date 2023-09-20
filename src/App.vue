@@ -10,11 +10,13 @@
   <hr>
   <ListRendering/>
   <hr> -->
-  <EventHandling/>
+  <!-- <EventHandling/>
   <hr>
   <InputBindings/>
   <hr>
   <LifeCycle/>
+  <hr/> -->
+  <Watch/>
 </template>
 
 <script setup>
@@ -26,6 +28,7 @@ import ListRendering from './components/ListRendering.vue';
 import EventHandling from './components/EventHandling.vue';
 import InputBindings from './components/InputBindings.vue';
 import LifeCycle from './components/LifeCycle.vue';
+import Watch from './components/Watch.vue';
 </script>
 
 <style>
