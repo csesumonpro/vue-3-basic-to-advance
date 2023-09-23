@@ -1,0 +1,3 @@
+<template>
+    GlobalComponent.vue
+</template>

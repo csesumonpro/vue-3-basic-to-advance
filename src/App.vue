@@ -1,5 +1,5 @@
 <template>
-  <h2>Hello from App</h2>
+  <h2 class="basic">Hello from App</h2>
   <!-- <Reactivity />
   <hr>
   <Computed />
@@ -19,6 +19,8 @@
   <Watch/>
   <hr/>
   <TemplateRefs/>
+  <hr/>
+  <ComponentBasic/>
 </template>
 
 <script setup>
@@ -31,6 +33,8 @@ import EventHandling from './components/EventHandling.vue';
 import InputBindings from './components/InputBindings.vue';
 import LifeCycle from './components/LifeCycle.vue';
 import Watch from './components/Watch.vue';
+import TemplateRefs from './components/TemplateRefs.vue';
+import ComponentBasic from './components/ComponentBasic.vue';
 </script>
 
 <style>
