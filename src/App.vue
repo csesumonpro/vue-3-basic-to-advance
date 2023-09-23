@@ -17,6 +17,8 @@
   <LifeCycle/>
   <hr/> -->
   <Watch/>
+  <hr/>
+  <TemplateRefs/>
 </template>
 
 <script setup>
