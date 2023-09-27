@@ -16,11 +16,12 @@
   <hr>
   <LifeCycle/>
   <hr/> -->
-  <Watch/>
+  <!-- <Watch/>
   <hr/>
   <TemplateRefs/>
   <hr/>
-  <ComponentBasic/>
+  <ComponentBasic/> -->
+  <Props/>
 </template>
 
 <script setup>
@@ -35,6 +36,7 @@ import LifeCycle from './components/LifeCycle.vue';
 import Watch from './components/Watch.vue';
 import TemplateRefs from './components/TemplateRefs.vue';
 import ComponentBasic from './components/ComponentBasic.vue';
+import Props from './components/Props.vue';
 </script>
 
 <style>
