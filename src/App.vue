@@ -22,7 +22,9 @@
   <hr/>
   <ComponentBasic/> -->
   <!-- <Props/> -->
-  <EventParent/>
+  <!-- <EventParent/> -->
+  <ComponentWithModel/>
+
 </template>
 
 <script setup>
@@ -40,6 +42,7 @@ import ComponentBasic from './components/ComponentBasic.vue';
 import Props from './components/Props.vue';
 import Events from './components/Events.vue';
 import EventParent from './components/EventParent.vue';
+import ComponentWithModel from './components/ComponentVmodel.vue';
 </script>
 
 <style>
