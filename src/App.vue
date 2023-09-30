@@ -23,7 +23,8 @@
   <ComponentBasic/> -->
   <!-- <Props/> -->
   <!-- <EventParent/> -->
-  <ComponentWithModel/>
+  <!-- <ComponentWithModel/> -->
+  <FallthroughAttribute style="color:rgb(204, 11, 133)" class="parent-class" @click="console.log('from parent')"/>
 
 </template>
 
@@ -43,6 +44,7 @@ import Props from './components/Props.vue';
 import Events from './components/Events.vue';
 import EventParent from './components/EventParent.vue';
 import ComponentWithModel from './components/ComponentVmodel.vue';
+import FallthroughAttribute from './components/FallthroughAttribute.vue';
 </script>
 
 <style>
