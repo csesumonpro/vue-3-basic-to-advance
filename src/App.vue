@@ -21,7 +21,8 @@
   <TemplateRefs/>
   <hr/>
   <ComponentBasic/> -->
-  <Props/>
+  <!-- <Props/> -->
+  <EventParent/>
 </template>
 
 <script setup>
@@ -37,6 +38,8 @@ import Watch from './components/Watch.vue';
 import TemplateRefs from './components/TemplateRefs.vue';
 import ComponentBasic from './components/ComponentBasic.vue';
 import Props from './components/Props.vue';
+import Events from './components/Events.vue';
+import EventParent from './components/EventParent.vue';
 </script>
 
 <style>
