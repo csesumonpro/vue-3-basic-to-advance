@@ -25,7 +25,7 @@
   <!-- <EventParent/> -->
   <!-- <ComponentWithModel/> -->
   <!-- <FallthroughAttribute style="color:rgb(204, 11, 133)" class="parent-class" @click="console.log('from parent')"/> -->
-  <Slots> New testdsf
+  <!-- <Slots> New testdsf
     <span style="color:red">Click me!</span>
   </Slots>
 
@@ -40,11 +40,13 @@
   <template #footer>
     <p>Footer Content</p>
   </template>
-</Slots>
+</Slots> -->
+<ProvideInject/>
 
 </template>
 
 <script setup>
+import {provide, ref} from 'vue'
 import Reactivity from './components/Reactivity.vue';
 import Computed from './components/Computed.vue';
 import ClassAndStyleBinding from './components/ClassAndStyleBinding.vue';
@@ -62,6 +64,20 @@ import EventParent from './components/EventParent.vue';
 import ComponentWithModel from './components/ComponentVmodel.vue';
 import FallthroughAttribute from './components/FallthroughAttribute.vue';
 import Slots from './components/Slots.vue';
+import ProvideInject from './components/ProvideInject.vue';
+
+const msg = ref('Hello from provides');
+
+const updateMessage = () => {
+  msg.value = 'update message';
+}
+
+provide('message', {
+  msg,
+  updateMessage
+})
+provide('counter', ref(1))
+
 </script>
 
 <style>
