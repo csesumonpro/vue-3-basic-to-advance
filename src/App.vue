@@ -24,7 +24,23 @@
   <!-- <Props/> -->
   <!-- <EventParent/> -->
   <!-- <ComponentWithModel/> -->
-  <FallthroughAttribute style="color:rgb(204, 11, 133)" class="parent-class" @click="console.log('from parent')"/>
+  <!-- <FallthroughAttribute style="color:rgb(204, 11, 133)" class="parent-class" @click="console.log('from parent')"/> -->
+  <Slots> New testdsf
+    <span style="color:red">Click me!</span>
+  </Slots>
+
+<Slots>
+  <template #header="headerSlots">
+    {{ headerSlots }}
+    <p>Header Content</p>
+  </template>
+  <template #default="defaultSlots">
+    default Content {{ defaultSlots }}
+  </template>
+  <template #footer>
+    <p>Footer Content</p>
+  </template>
+</Slots>
 
 </template>
 
@@ -45,6 +61,7 @@ import Events from './components/Events.vue';
 import EventParent from './components/EventParent.vue';
 import ComponentWithModel from './components/ComponentVmodel.vue';
 import FallthroughAttribute from './components/FallthroughAttribute.vue';
+import Slots from './components/Slots.vue';
 </script>
 
 <style>
