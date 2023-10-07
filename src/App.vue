@@ -41,12 +41,17 @@
     <p>Footer Content</p>
   </template>
 </Slots> -->
-<ProvideInject/>
+<!-- <ProvideInject/> -->
+<button @click="showAsyncComponent = !showAsyncComponent"> Click to Show</button>
+
+<div v-if="showAsyncComponent">
+  <AsyncComponent />
+</div>
 
 </template>
 
 <script setup>
-import {provide, ref} from 'vue'
+import {provide, ref, defineAsyncComponent} from 'vue'
 import Reactivity from './components/Reactivity.vue';
 import Computed from './components/Computed.vue';
 import ClassAndStyleBinding from './components/ClassAndStyleBinding.vue';
@@ -66,6 +71,7 @@ import FallthroughAttribute from './components/FallthroughAttribute.vue';
 import Slots from './components/Slots.vue';
 import ProvideInject from './components/ProvideInject.vue';
 
+
 const msg = ref('Hello from provides');
 
 const updateMessage = () => {
@@ -77,6 +83,10 @@ provide('message', {
   updateMessage
 })
 provide('counter', ref(1))
+
+const showAsyncComponent = ref(false);
+
+const AsyncComponent = defineAsyncComponent(() => import('./components/AsyncComponent.vue'));
 
 </script>
 
